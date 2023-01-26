@@ -60,8 +60,9 @@ public class Playermovement : MonoBehaviour
         Vector3 temp = moveDirection;
 
         temp.y = 0;
-
+        if (Anim) {
         Anim.SetFloat("speed", temp.magnitude);
+            }
 
     }
 }
