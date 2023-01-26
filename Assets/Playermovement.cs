@@ -18,7 +18,7 @@ public class Playermovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-
+        Cursor.lockState = CursorLockMode.Locked;
         // let the gameObject fall down
     }
 
