@@ -30,11 +30,11 @@ public class health : MonoBehaviour
     {
         
     }
-
     public void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("lol2");
         if (collision.gameObject.CompareTag("eNEMY")) {
-           
+            Debug.Log("lol");
             TakeDamage(5);
         }
     }
